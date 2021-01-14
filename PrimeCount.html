@@ -1,0 +1,37 @@
+<html>
+	<script>
+		var variable=window.prompt("Enter number of prime numbers you wanna display");
+		
+		var number=parseInt(variable);
+		
+		var count=0;
+		
+		var countFactor=0;
+		
+		var i=1;
+		
+		while(count!=number)
+		{
+			
+			var countFactor=0;
+			
+			for(var j=1;j<=i;j++)
+			{
+				if(i%j==0)
+				{
+					countFactor++;
+				}
+			}
+			
+			if(countFactor==2)
+			{
+			document.write(i+" ");
+				count++;
+			}
+			i++;
+		}
+	</script>
+
+
+
+</html>
