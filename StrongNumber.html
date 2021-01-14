@@ -1,0 +1,38 @@
+<html>
+
+	<script>
+		var variable=window.prompt();
+		
+		var number=parseInt(variable);
+		
+		var num=number;
+		
+		var sum=0;
+	
+		while(number>0)
+		{
+			var fact=1;
+			var rem=number%10;
+			
+			for(var i=1;i<=rem;i++)
+			{
+				fact=fact*i;
+			}
+			sum=sum+fact;
+			
+			number=Math.floor(number/10);
+			
+		}
+		if(sum===num)
+		{
+		document.write(num+" is a strong number");
+		
+		}
+		
+		else
+		{document.write(num+" is not a strong number");}
+		
+	</script>
+
+
+</html>
