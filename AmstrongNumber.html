@@ -1,0 +1,37 @@
+<html>
+
+	<script>
+		var variable=window.prompt();
+		
+		var number=parseInt(variable);
+		
+		var num=number;
+		
+		var sum=0;
+		
+		var num=number;
+		while(number>0)
+		{
+			var cube=1;
+			var rem=number%10;
+			
+			cube=rem*rem*rem;
+			
+			sum+=cube;
+			
+			number=Math.floor(number/10);
+			
+		}
+		if(sum===num)
+		{
+		document.write(num+" is an amstrong number");
+		
+		}
+		
+		else
+		{document.write(num+" is not an amstrong number");}
+		
+	</script>
+
+
+</html>
